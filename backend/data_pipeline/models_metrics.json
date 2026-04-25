@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-27T18:38:52.999284",
+  "records": 6100,
+  "samples": 5600,
+  "results": {
+    "linear_regression": {
+      "mae": 0.010072
+    },
+    "random_forest": {
+      "mae": 0.010158
+    },
+    "neural_network": {
+      "mae": 0.010774
+    }
+  }
+}

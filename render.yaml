@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: investment-agent-api
+    runtime: python
+    rootDir: .
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.api.main:app --host 0.0.0.0 --port $PORT
+
+  - type: static
+    name: investment-agent-web
+    rootDir: frontend/web
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: REACT_APP_API_BASE
+        value: https://investment-agent-api.onrender.com

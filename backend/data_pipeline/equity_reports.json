@@ -1,0 +1,145 @@
+{
+  "updated_at": "2026-04-21T21:48:19.544893",
+  "reports": [
+    {
+      "symbol": "ABL.KA",
+      "company_name": "Allied Bank Limited",
+      "sector": "Banking",
+      "fundamentals": {
+        "revenue_growth_pct": 10.9,
+        "profit_growth_pct": 11.2,
+        "roe_pct": 16.8,
+        "debt_to_equity": 0.59,
+        "pe_ratio": 6.5,
+        "pb_ratio": 1.0,
+        "gross_margin_pct": 0.0,
+        "net_margin_pct": 20.7
+      },
+      "period_end": "2025-12-31",
+      "source_urls": [
+        "https://example.com/abl"
+      ],
+      "risk_factors": [
+        "competition for deposits",
+        "policy changes"
+      ],
+      "thesis": "Balance-sheet strength and solid profitability make the stock attractive for a risk-aware portfolio.",
+      "target_view": "BUY",
+      "confidence_score": 0.84,
+      "source_notes": "Sample meeting summary for dashboard testing",
+      "updated_at": "2026-04-20T10:00:00"
+    },
+    {
+      "symbol": "MCB.KA",
+      "company_name": "MCB Bank Limited",
+      "sector": "Banking",
+      "fundamentals": {
+        "revenue_growth_pct": 11.8,
+        "profit_growth_pct": 10.4,
+        "roe_pct": 17.9,
+        "debt_to_equity": 0.65,
+        "pe_ratio": 7.1,
+        "pb_ratio": 1.2,
+        "gross_margin_pct": 0.0,
+        "net_margin_pct": 21.6
+      },
+      "period_end": "2025-12-31",
+      "source_urls": [
+        "https://example.com/mcb"
+      ],
+      "risk_factors": [
+        "margin pressure",
+        "credit cycle slowdown"
+      ],
+      "thesis": "Consistent earnings and disciplined lending keep the investment case constructive, though upside may be moderate.",
+      "target_view": "HOLD",
+      "confidence_score": 0.78,
+      "source_notes": "Sample meeting summary for dashboard testing",
+      "updated_at": "2026-04-20T10:00:00"
+    },
+    {
+      "symbol": "HBL.KA",
+      "company_name": "Habib Bank Limited",
+      "sector": "Banking",
+      "fundamentals": {
+        "revenue_growth_pct": 14.2,
+        "profit_growth_pct": 12.1,
+        "roe_pct": 18.6,
+        "debt_to_equity": 0.72,
+        "pe_ratio": 6.8,
+        "pb_ratio": 1.1,
+        "gross_margin_pct": 0.0,
+        "net_margin_pct": 22.4
+      },
+      "period_end": "2025-12-31",
+      "source_urls": [
+        "https://example.com/hbl"
+      ],
+      "risk_factors": [
+        "interest-rate sensitivity",
+        "regulatory changes"
+      ],
+      "thesis": "Strong deposit franchise, healthy profitability, and stable capital position support a positive medium-term outlook.",
+      "target_view": "BUY",
+      "confidence_score": 0.86,
+      "source_notes": "Sample meeting summary for dashboard testing",
+      "updated_at": "2026-04-20T10:00:00"
+    },
+    {
+      "symbol": "LUCK.KA",
+      "company_name": "Lucky Cement",
+      "sector": "Cement",
+      "fundamentals": {
+        "revenue_growth_pct": 13.6,
+        "profit_growth_pct": 9.1,
+        "roe_pct": 15.4,
+        "debt_to_equity": 0.88,
+        "pe_ratio": 8.5,
+        "pb_ratio": 1.7,
+        "gross_margin_pct": 28.9,
+        "net_margin_pct": 11.5
+      },
+      "period_end": "2025-12-31",
+      "source_urls": [
+        "https://example.com/luck"
+      ],
+      "risk_factors": [
+        "energy-cost inflation",
+        "construction slowdown"
+      ],
+      "thesis": "Diversified operations and improving dispatches support growth, but cost inflation should be monitored.",
+      "target_view": "HOLD",
+      "confidence_score": 0.74,
+      "source_notes": "Sample meeting summary for dashboard testing",
+      "updated_at": "2026-04-20T10:00:00"
+    },
+    {
+      "symbol": "OGDC.KA",
+      "company_name": "Oil & Gas Development Company",
+      "sector": "Oil & Gas",
+      "fundamentals": {
+        "revenue_growth_pct": 9.4,
+        "profit_growth_pct": 8.7,
+        "roe_pct": 24.1,
+        "debt_to_equity": 0.18,
+        "pe_ratio": 4.9,
+        "pb_ratio": 0.9,
+        "gross_margin_pct": 36.5,
+        "net_margin_pct": 18.1
+      },
+      "period_end": "2025-12-31",
+      "source_urls": [
+        "https://example.com/ogdc"
+      ],
+      "risk_factors": [
+        "commodity-price volatility",
+        "production disruptions"
+      ],
+      "thesis": "Low leverage and strong cash generation are positives, but commodity exposure remains a meaningful risk.",
+      "target_view": "BUY",
+      "confidence_score": 0.82,
+      "source_notes": "Sample meeting summary for dashboard testing",
+      "updated_at": "2026-04-20T10:00:00"
+    }
+  ]
+}
