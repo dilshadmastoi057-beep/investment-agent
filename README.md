@@ -27,11 +27,69 @@ python backend\data_pipeline\pipeline.py
 uvicorn backend.api.main:app --reload
 ```
 
-4. Frontend
+4. Run the Flask portfolio API
+```
+set ALPHA_VANTAGE_API_KEY=your_key_here
+cd backend\flask_portfolio
+python app.py
+```
+
+5. Frontend
 ```
 cd frontend\web
 npm install
+set REACT_APP_PORTFOLIO_API_BASE=http://127.0.0.1:5000
 npm start
+```
+
+## Flask Portfolio Upgrade
+
+This repo now includes a beginner-friendly Flask service in `backend/flask_portfolio/` for a simple US stock portfolio flow.
+
+- `backend/flask_portfolio/app.py`
+  Flask app with `GET /portfolio`
+- `backend/flask_portfolio/portfolio_service.py`
+  Alpha Vantage fetching + closing price parsing + return math
+- `backend/flask_portfolio/.env.example`
+  Environment variable example for `ALPHA_VANTAGE_API_KEY`
+
+The Flask endpoint fetches the last 30 daily closes for:
+- `AAPL`
+- `MSFT`
+- `GOOGL`
+
+It computes:
+- daily returns
+- average daily return for each stock
+- equal-weight portfolio return
+
+Frontend integration is added in `frontend/web/src/App.js` through:
+- `REACT_APP_PORTFOLIO_API_BASE`
+
+Example response shape:
+```json
+{
+  "returns": {
+    "AAPL": 0.0012,
+    "MSFT": 0.0008,
+    "GOOGL": 0.0011
+  },
+  "stocks": {
+    "AAPL": {
+      "closing_prices": [201.44, 202.1],
+      "daily_returns": [0.0032],
+      "average_return": 0.0012
+    }
+  },
+  "portfolio": {
+    "weights": {
+      "AAPL": 0.3333,
+      "MSFT": 0.3333,
+      "GOOGL": 0.3333
+    },
+    "total_return": 0.00103
+  }
+}
 ```
 
 ## Main Features
